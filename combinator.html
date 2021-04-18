@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="c">
+        <p>đoạn văn 1</p>
+        <span>
+            <p> đoạn văn 2</p>
+        </span>
+        
+    </div>
+    <p> đoạn văn 3</p>
+        <p> đoạn văn 4</p>
+    <style>
+        .c p {        /* chọn tất cả con cháu*/
+            color: brown;
+        }
+        .c>p{
+            color: aqua; /* chọn mỗi con không chọn cháu*/
+        }
+        .c+p{
+            color: yellow;  /* chọn thằng hàng xóm*/
+        }
+        .c~p{
+            color:blue;/* chọn cả thawnng anh em với thằng hàng xóm*/
+        }
+    </style>
+</body>
+
+</html>
